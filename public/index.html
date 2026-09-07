@@ -1,0 +1,25 @@
+<!doctype html><html lang="ru"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>LinguaHub</title><link rel="stylesheet" href="style.css"></head><body>
+<header><div class="logo">L<span>H</span> <small>LINGUA HUB</small></div>
+<button id="lang">🇬🇧 English</button><button id="theme">☾</button></header>
+<main>
+<section class="hero"><div><b>ENGLISH + DEUTSCH</b><h1>Учись языкам<br><em>по-настоящему.</em></h1><p>Курс, истории, теория, слова, практика и нейро-репетитор в одном месте.</p><button class="gold" data-open="course">Продолжить обучение →</button></div>
+<div class="progressCard"><small>ТВОЙ ПРОГРЕСС</small><strong id="levelBig">A1</strong><div class="bar"><i id="bar"></i></div><p id="xp">0 / 12 уроков · 0 XP</p></div></section>
+<section class="pick"><div><small>СЕЙЧАС ИЗУЧАЕМ</small><h2 id="langName">Английский</h2></div>
+<button class="language active" data-l="en">🇬🇧 English<br><small>Английский</small></button><button class="language" data-l="de">🇩🇪 Deutsch<br><small>Немецкий</small></button></section>
+<nav><button class="tab active" data-open="course">Курс</button><button class="tab" data-open="stories">Истории</button><button class="tab" data-open="dictionary">Словарь</button><button class="tab" data-open="theory">Теория</button><button class="tab" data-open="practice">Практика</button><button class="tab" data-open="ai">Нейро-репетитор</button></nav>
+
+<section id="course" class="page active"><div class="head"><div><small>ПОШАГОВЫЙ КУРС</small><h2>Уроки</h2></div><select id="level"><option>A1</option><option>A2</option><option>B1</option><option>B2</option><option>C1</option><option>C2</option></select></div><div id="lessons" class="grid"></div></section>
+
+<section id="stories" class="page"><div class="head"><div><small>ЧТЕНИЕ</small><h2>Адаптированные истории</h2></div><select id="storyLevel"><option>A1</option><option>A2</option><option>B1</option><option>B2</option></select></div><article class="story"><div><small id="storyMeta"></small><h2>Синяя тетрадь</h2><p id="storyText"></p></div><aside>💡 Нажми на слово в тексте, чтобы открыть перевод и услышать произношение.</aside></article></section>
+
+<section id="dictionary" class="page"><div class="head"><div><small>VOCABULARY</small><h2>Словарь</h2></div></div><div class="search"><input id="word" placeholder="house / Haus"><button class="gold" id="find">Найти</button></div><div id="words" class="grid"></div></section>
+
+<section id="theory" class="page"><div class="head"><div><small>КОНСПЕКТЫ</small><h2>Теория</h2></div></div><div class="theory"><aside id="topics"></aside><article id="note"></article></div></section>
+
+<section id="practice" class="page"><div class="head"><div><small>ТРЕНАЖЁР</small><h2>Практика</h2></div></div><article class="quiz"><small id="counter"></small><h2 id="question"></h2><div id="answers"></div><p id="feedback"></p><button class="gold" id="next">Следующее →</button></article></section>
+
+<section id="ai" class="page"><div class="head"><div><small>AI TUTOR</small><h2>Нейро-репетитор</h2></div></div><div class="ai"><div><h2>✦ Учись через диалог</h2><p>Попроси объяснить грамматику, потренировать слова или провести короткий диалог.</p><div id="suggest"><button>Объясни Present Simple на A1</button><button>Потренируй 5 слов</button><button>Давай диалог в магазине</button></div></div><div class="chat"><div id="messages"><p class="bot">Привет! Что будем тренировать?</p></div><form id="form"><input id="msg" placeholder="Напиши сообщение…"><button class="gold">→</button></form></div></div></section>
+</main><div id="modal" class="modal"><div><button id="close">×</button><h1 id="mw"></h1><p id="mp"></p><h2 id="mt"></h2><button class="gold" id="speak">🔊 Послушать</button></div></div>
+<script src="data.js"></script><script src="app.js"></script></body></html>
